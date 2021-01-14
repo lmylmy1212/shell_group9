@@ -103,5 +103,5 @@ int touch(int argc, char *argv[])
     {
         ok &= mytouch(argv[optind]);
     }
-    exit(ok ? EXIT_SUCCESS : EXIT_FAILURE);
+   // exit(ok ? EXIT_SUCCESS : EXIT_FAILURE);
 }

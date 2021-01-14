@@ -23,5 +23,5 @@ void echo(int argc, char *args[])
 	{
 		putchar('\n');
 	}
-	exit(0);
+	
 }
