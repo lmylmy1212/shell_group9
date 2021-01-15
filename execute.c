@@ -23,13 +23,12 @@
 #include "cp.h"
 #include "echo.h"
 #include "mv.h"
+#include "cd.h"
 #include "pwd.h"
-#include "vi.h"
 #include "bianliang.h"
 
 
-
-int execute(char* arglist[])
+int execute(int argc,char* arglist[])
 {
     if (strcmp(arglist[0],"cat\0")==0){
         cat(arglist);
@@ -58,10 +57,9 @@ int execute(char* arglist[])
     {
         mv(num,arglist);
     }
-    else if(strcmp(arglist[0],"vi\0")==0)
-    {
-        vi(num,arglist);
-    }
+    
+   
+    
     else if(strcmp(arglist[0],"exit\0")==0)
     {
         exit(0);
@@ -70,6 +68,11 @@ int execute(char* arglist[])
     {
         pwd();
     }
+    else if (strcmp(arglist[0],"cd\0")==0)
+    {
+        cd();
+    }
+
 
 
     

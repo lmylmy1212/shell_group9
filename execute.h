@@ -7,4 +7,4 @@
 #include <unistd.h>
 #include <string.h>
 
-int execute(char* arglist[]);
+int execute(int argc,char* arglist[]);

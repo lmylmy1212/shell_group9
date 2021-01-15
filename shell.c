@@ -10,6 +10,7 @@
 #include "execute.h"
 #include "getCurWorkDir.h"
 #include "split.h"
+
 #include "bianliang.h"
 int main()
 {
@@ -22,7 +23,8 @@ int main()
 		//printf("%s:",buf);
 		fgets(buf,LEN,stdin);//读入单行指令
 	        num=my_system(buf,arglist);//指令分割
-		execute(arglist);//执行
+
+		execute(num,arglist);//执行
 		
 	}
 }
